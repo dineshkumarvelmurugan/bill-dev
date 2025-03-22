@@ -14,15 +14,15 @@ spec:
     spec:
       containers:
         - name: bill-calculator
-          image: dineshv2307/mydocker:latest  # Use your pushed image
+          image: dineshv2307/mydocker:latest
           ports:
             - containerPort: 80
-
+          imagePullPolicy: IfNotPresent
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: bill-calculator
+  name: bill-calculator-service
 spec:
   selector:
     app: bill-calculator
