@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: bill-calculator
-          image: dineshv2307/mydocker:latest
+          image: dineshv2307/bill:latest
           ports:
             - containerPort: 80
           imagePullPolicy: IfNotPresent
